@@ -48,11 +48,7 @@ public class ReverseGeocoding extends AsyncTask<InputValues,Void,String> {
             in.close();
             System.out.print(response);
             String responsestring = response.toString();
-            System.out.println("***  Measure point  response BEGIN ***");
-            System.out.println(responsestring);
-
-
-            System.out.println("*** Measure point respose END ***");
+        
             JSONObject jsonObject = new JSONObject(responsestring);
             JSONArray responseArray= jsonObject.getJSONArray("results");
             for (int i = 0; i < responseArray.length(); i++) {
