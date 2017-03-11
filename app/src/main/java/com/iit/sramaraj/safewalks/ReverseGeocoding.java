@@ -35,8 +35,7 @@ public class ReverseGeocoding extends AsyncTask<InputValues,Void,String> {
             conn.setRequestMethod("GET");
 
             int responseCode = conn.getResponseCode();
-            System.out.println("\nSending 'GET' request to URL : " + newurl);
-            System.out.println("Response Code : " + responseCode);
+        
             BufferedReader in =
                     new BufferedReader(new InputStreamReader(conn.getInputStream()));
             String inputLine;
